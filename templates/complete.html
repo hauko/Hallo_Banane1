@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Fileupload war erfolgreich!</p>
+<form id="download-form" action="{{ url_for('complete') }}" method="POST">
+        <input type="submit" value="Download">
+</form>
+<form id="download-form" action="{{ url_for('upload') }}">
+        <input type="submit" value="Weiteres Dokument hochladen">
+</form>
+</body>
+</html>

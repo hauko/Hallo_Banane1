@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Startseite</title>
+</head>
+<body>
+<form id="start-form" action="{{ url_for('start') }}" method="POST" enctype="multipart/form-data">
+    <input type="text" name="name" placeholder="Username">
+     <input type="password" name="password" placeholder="Passwort">
+    <button type="submit" name="submit" value="start">Upload starten</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<br>
+<p></p>
+<p> </p>
+<p>Der Dateiupload ist leider fehlerhaft. Es ist entweder kein QR Code vorhanden oder die Seite ist leer.</p>
+<p>Bitte geben Sie den Datei Code manuell ein oder entfernen Sie die Seite, indem Sie auf delete dr&uuml;cken</p>
+<p>{{ nof }}</p>
+<p><img src="static/{{ pic }}" alt="Hier sollte das fehlerhafte Bild sein" width="426" height="426" /></p>
+<p></p>
+
+<form id="fehler-form" action="{{ url_for('fehler') }}" method="POST" enctype="multipart/form-data">
+   <input type="text" name="refactor" placeholder="Code der Seite">
+    <p><input type="text" name="typ" placeholder="Typbezeichnung"></p>
+    <p><input type="text" name="v_nr" placeholder="Vorgangsnummer"></p>
+    <p><input type="text" name="r_nr" placeholder="Registernummer"></p>
+    <p><input type="text" name="dok_typ" placeholder="Dokumententyp"></p>
+    <p><input type="text" name="seite" placeholder="Seite"></p>
+    <p><input type="text" name="seite_anz" placeholder="Seitenzahl gesamt"></p>
+    <button type="submit" name="submit" value="send">senden</button>
+    <button type="submit" name="submit" value="delete">delete</button>
+</form></br>
+
+</body>
+</html>
